@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="48221c84-baa9-4bf3-82b0-2094918555c7" name="Default Changelist" comment="Site package update." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="d9bd08a6-3fad-4adb-b433-df4ad8468b3e" />
+  <component name="ProjectId" id="1lzs00pBeaRwopCtyc8XivBmIfW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Testing/Web_Form" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="root" type="Python.DjangoServer" factoryName="Django server">
+      <module name="root" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="root.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\chint\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48221c84-baa9-4bf3-82b0-2094918555c7" name="Default Changelist" comment="" />
+      <created>1608611026586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608611026586</updated>
+      <workItem from="1608611107280" duration="8429000" />
+      <workItem from="1608633447857" duration="12817000" />
+      <workItem from="1608699081645" duration="6717000" />
+      <workItem from="1608753185093" duration="2891000" />
+      <workItem from="1608808446817" duration="8234000" />
+      <workItem from="1608864482762" duration="11945000" />
+      <workItem from="1608966236330" duration="12123000" />
+      <workItem from="1609041165907" duration="9230000" />
+      <workItem from="1609129603117" duration="7054000" />
+      <workItem from="1609163758318" duration="10890000" />
+      <workItem from="1609219934078" duration="4516000" />
+      <workItem from="1609232355244" duration="3768000" />
+      <workItem from="1609305700656" duration="607000" />
+      <workItem from="1609493148433" duration="4683000" />
+      <workItem from="1612242312900" duration="1021000" />
+      <workItem from="1612244714896" duration="2603000" />
+      <workItem from="1612592962318" duration="180000" />
+      <workItem from="1612593165066" duration="776000" />
+      <workItem from="1612593986012" duration="385000" />
+      <workItem from="1612597351903" duration="7015000" />
+      <workItem from="1612612875672" duration="1796000" />
+      <workItem from="1612614715517" duration="6784000" />
+      <workItem from="1612677853163" duration="2475000" />
+      <workItem from="1612697077101" duration="4176000" />
+      <workItem from="1613296152805" duration="5272000" />
+      <workItem from="1613303701572" duration="868000" />
+      <workItem from="1613394335508" duration="1377000" />
+      <workItem from="1613456369531" duration="18000" />
+      <workItem from="1613723451338" duration="16000" />
+      <workItem from="1613754775599" duration="2629000" />
+      <workItem from="1613802774855" duration="19000" />
+      <workItem from="1615822997001" duration="637000" />
+      <workItem from="1615958887671" duration="697000" />
+      <workItem from="1616957913223" duration="609000" />
+      <workItem from="1616995317623" duration="726000" />
+    </task>
+    <task id="LOCAL-00001" summary="Modified index page.">
+      <created>1608709243403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608709243403</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modified index page.">
+      <created>1608832908111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608832908111</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Modified content.">
+      <created>1608966315378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608966315378</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modified content.">
+      <created>1609041344439</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609041344439</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Malaria classifier.">
+      <created>1609187403284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609187403284</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Site package update.">
+      <created>1612606177512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612606177512</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Site package update.">
+      <created>1612608146716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612608146716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modified index page." />
+    <MESSAGE value="Modified content." />
+    <MESSAGE value="Added Malaria classifier." />
+    <MESSAGE value="Site package update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Site package update." />
+  </component>
+</project>

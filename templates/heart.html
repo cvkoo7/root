@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <style>
+        .img-preview {
+            width: 256px;
+            height: 256px;
+            position: relative;
+            border: 5px solid #F8F8F8;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        @keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+            10% {
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            20% {
+                opacity: 1;
+            }
+            30% {
+                opacity: 0;
+            }
+        }
+
+        .img-preview > div {
+            width: 100%;
+            height: 100%;
+            background-size: 256px 256px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .upload-label {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #39D2B4;
+            color: #fff;
+            font-size: 1em;
+            transition: all .4s;
+            cursor: pointer;
+        }
+
+        .upload-label:hover {
+            background: #34495E;
+            color: #39D2B4;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+    <section id="contact" class="contact" style="margin-top:50px;margin-bottom:220px;">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Malaria Disease classification</h2>
+            </div>
+
+            <div class="row">
+
+                <h2>Image Classifier for Malaria Detection</h2>
+
+                <div class="container">
+                    <form id="upload-file" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="imageUpload" class="upload-label"> Choose... </label>
+                        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg"/>
+                    </form>
+
+                    <div class="image-section" style="display: none">
+                        <div class="img-preview">
+                            <div id="imagePreview"></div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-lg" id="btn-predict">
+                                Predict!
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="loader" style="display: none"></div>
+
+                    <h3 id="result">
+                        <span> </span>
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Init
+            $('.image-section').hide();
+            $('.loader').hide();
+            $('#result').hide();
+
+            // Upload Preview
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                        $('#imagePreview').hide();
+                        $('#imagePreview').fadeIn(650);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $("#imageUpload").change(function () {
+                $('.image-section').show();
+                $('#btn-predict').show();
+                $('#result').text('');
+                $('#result').hide();
+                readURL(this);
+            });
+
+            // Predict
+            $('#btn-predict').click(function () {
+                var form_data = new FormData($('#upload-file')[0]);
+
+                // Show loading animation
+                $(this).hide();
+                $('.loader').show();
+                console.log(form_data)
+                // Make prediction by calling api /predict
+                $.ajax({
+                    type: 'POST',
+                    url: '/h_result',
+                    data: form_data,
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    async: true,
+                    success: function (data) {
+                        // Get and display the result
+                        $('.loader').hide();
+                        $('#result').fadeIn(600);
+                        $('#result').text(' Result:  ' + data);
+                        console.log('Success!');
+                    },
+                });
+            });
+
+        });
+    </script>
+{% endblock %}

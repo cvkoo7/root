@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block body %}
+<br><br>
+<div class="section-title" data-aos="fade-up" style="margin-top:50px;">
+  <h2>Prediction Results</h2>
+</div>
+<!-- <div class="container" text>
+  <h1 class="text-center">Heart Disesase Prediction Result</h1>
+</div> -->
+<!-- Result -->
+<div class="center">
+  {% if prediction == 1 %}
+  <div class="congrats" style="margin-top:100px;">
+    <h1 id="Congratulations" style="color:red">Sorry to say, but you need doctor.</h1>
+  </div>
+  {% elif prediction == 0 %}
+
+  <div class="congrats" style="margin-top:100px;">
+    <h1 id="Congratulations">Congratulations, you are safe.</h1>
+  </div>
+  <!-- <h1>Prediction: <span class='safe'>Great! You DON'T have Heart Disesase.</span></h1> -->
+
+  {% endif %}
+</div>
+
+<section id="about" class="about" style="margin-bottom:270px;">
+  <div class="container">
+  </div>
+</section>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js'></script>
+<script src="/static/js/result.js"></script>
+
+
+
+{% endblock %}

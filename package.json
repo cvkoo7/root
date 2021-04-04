@@ -1,0 +1,8 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "counterup2": "^1.0.4"
+  }
+}

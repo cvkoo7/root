@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+<br><br>
+<div class="container" text>
+    <h1 class="text-center">Diabetes Prediction Result</h1>
+</div>
+		<!-- Result -->
+		<div class="center">
+			{% if my_prediction == 1 %}
+				<h1>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
+
+			{% elif my_prediction == 0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
+
+			{% endif %}
+		</div>
+{% endblock %}
